@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Tech Solutions&rdquo; Documentation by &ldquo;Blendztech&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Tech Solutions&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 1/3/2017<br>
+					By: Salman Kashfy<br>
+					Email: salmankashfy@gmail.com
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions or queries, please feel free to email me. <a href="https://themeforest.net/user/blendztech?_ga=1.205219600.1287529788.1488187450">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#image">Update Images</a></li>
+			<li><a href="#form">Update Form</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This template is a Responsive layout, all contents are within section tag
+			 The general template structure is the same throughout the template.
+			Here is the general structure.</p>
+		
+		<img src="assets/images/01_htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to change the the purple theme color, change the the following in style.css in css folder</p>
+
+<pre>	.theme-color{
+    	color:#your-color;
+}
+	<p> Also replace this code "color:rgb(152,120,199);" wherever you find it in from style.css with your desired template color</p>
+</pre>
+		<p>If you would like to change font of the template, you would do the following. Don't forget to add !important to your code.</p>
+
+<pre>	body{
+    font-family: "Your font name" ,font type !important;
+}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I have attached three css files, <blockquote>style.css</blockquote> displays all the styling and alignment
+		that is displayed on the web, <blockquote>@media.css</blockquote> changes the alignment of elements for tablet and mobile views</p>
+
+		<p>The third file <blockquote>bootstrap.min.css</blockquote>only styles the menu.</p>
+
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>My custom scripts</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>To change the speed of text being typed and removed effects at the top. Look at the following code
+<pre>	$(function(){
+
+    $("#typed").typed({
+             strings: ["Typed.js a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 60,	<b>Increase this number to reduces the speed of typing.</b>
+        backDelay: 1000, <b>Increase this number to Increase the speed of text removing.</b>
+        loop: true,
+        contentType: 'html', // or text
+        loopCount: false,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+    });
+
+    $(".reset").click(function(){
+        $("#typed").typed('reset');
+    });
+
+});
+</pre>
+		</ol>
+
+		<hr>
+		<h3 id="image"><strong>D) Update images </strong> - <a href="#toc">top</a></h3>
+
+		<p>There are three images that needs to be updated.</p>
+
+		<ol>
+			<li>Favicon image.</li>
+			<li>Header image.</li>
+			<li>Bottom image.</li>
+			<li>Clients image</li>
+		</ol>
+<hr>
+		<ol>
+			<li>Update favicon image from index.html at line shown below<br>
+				<img src="assets/images/02_favicon.png" width="1000px"><br>
+				<p>Replace url inside href quote with img/yourimagename.jpg</p>
+			</li>
+			<li>Update header image from style.css at line shown below<br>
+				<img src="assets/images/03_header.png" width="1000px"><br>
+				<p>Replace the complete line with this code:
+					background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/yourimagename.jpg)</p>
+			</li>
+			<li>Update bottom image from style.css at line shown below<br>
+				<img src="assets/images/04_bottom.png" width="1000px"><br>
+				<p>Replace the complete line with this code:
+					background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/yourimagename.jpg)</p>
+			</li>
+			<li>Update clients image from index.html at line shown below<br>
+				<img src="assets/images/05_clients.png" width="1000px"><br>
+				<p>Replace the complete url with this code:
+					img/yourimagename.jpg></p>
+			</li>
+		</ol>
+		<h3 id="form"><strong>E) Update Form </strong> - <a href="#toc">top</a></h3>
+		<hr>
+		<p>Update your form.php file (where your index.html is located) and enter your email address shown below</p>
+		<img src="assets/images/06_mail.png" alt="mail">
+		<p>Enter the email address where you want to recieve all your emails from your clients.</p>
+
+
+		<hr>
+		<p class="append-bottom alt large"><strong>If you like this template, Please help fellow users of this template by giving it 5 Star rating.</strong></p>
+		<span><a href="https://themeforest.net/item/tech-solutions/19540216?s_rank=2" target="_blank">Rate this template here</a></span>
+		<p class="append-bottom alt large"><strong>Salman Kashfy</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
