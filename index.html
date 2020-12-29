@@ -55,6 +55,17 @@
 				<li><a href="#about"> ABOUT US </a></li>
 				<li><a href="#services"> WHAT WE DO </a></li>
 				<li><a href="#contact"> CONTACT </a></li>
+				<li>
+					<div class="search-container">
+				      <input type="text"
+								value="What can we help you with?"
+                name="searchBar"
+                id="searchBar"
+								onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
+								>
+				      <button type="submit" id="searchButton"><i class="fa fa-search"></i></button>
+	  			</div>
+			</li>
 			</ul>
 		</div>
 	</div>
@@ -260,6 +271,23 @@
 </section>
 <!-- End Client Section -->
 
+<!-- Start Search results Section -->
+<section class="results section-margin" id="resultsContainer">
+	<div class="container">
+		<h1 id="results" class="bold">Search Results:</h1>
+		<h2>You searched for:</h2>
+		<h2 id="srch"></h2>
+
+
+
+
+<h3>That’s <em>your</em> problem!</h3>
+
+
+	</div>
+</section>
+<!-- End Search results Section -->
+
 <!-- Start Google Section-->
 <section id="google-map">
 	<iframe class="map hideElement" src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -409,6 +437,7 @@
 <script src="assets/js/js.js"></script>
 <script src="assets/js/form_functions.js"></script>
 <script src="assets/js/form.js"></script>
+<script src="assets/js/search.js"></script>
 
 <script>
     var form=document.getElementById("sunsetContactForm");

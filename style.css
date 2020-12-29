@@ -162,6 +162,51 @@ h1{
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
 }
+
+.navbar-nav .search-container {
+  float: right;
+}
+
+.navbar-nav input[type=text] {
+  padding: 4px;
+  margin-top: 8px;
+  font-size: 17px;
+  width: 238px;
+  /*border: none;*/
+}
+
+
+.navbar-nav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-nav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-nav .search-container {
+    float: none;
+  }
+  .navbar-nav a, .navbar-nav input[type=text], .navbar-nav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar-nav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
 /*End MENU Section*/
 
 /*
@@ -240,6 +285,20 @@ section h3{
     animation-duration: 2s;
 }
 /*!*End ONE-FOURTH Section*!*/
+
+/*
+=====================================================================
+ Search Results section
+=====================================================================
+*/
+
+#resultsContainer {
+  display: none;
+  padding: 90px 0 40px;
+}
+
+
+/*!*End Search Results Section*!*/
 
 /*
 =====================================================================
