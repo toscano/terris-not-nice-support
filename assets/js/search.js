@@ -6,6 +6,7 @@ $(document).ready(function() {
       document.getElementById("resultsContainer").style.display = "block";
       document.getElementById("srch").innerHTML = searchString;
       window.location.href = '#resultsContainer';
+      $(".navbar-collapse").collapse('hide');
     });
     var input = document.getElementById("searchBar");
     input.addEventListener("keyup", function(event) {

@@ -44,7 +44,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="#" id="logo"><img src="img/logo.png"></a>
+
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,18 +55,23 @@
 				<li><a href="#about"> ABOUT US </a></li>
 				<li><a href="#services"> WHAT WE DO </a></li>
 				<li><a href="#contact"> CONTACT </a></li>
-				<li>
-					<div class="search-container">
-				      <input type="text"
-								value="What can we help you with?"
-                name="searchBar"
-                id="searchBar"
-								onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-								>
-				      <button type="submit" id="searchButton"><i class="fa fa-search"></i></button>
-	  			</div>
-			</li>
 			</ul>
+			<div class="col-sm-3 col-md-3 pull-right">
+				<br/>
+				<div class="input-group">
+					<input	type="text"
+							class="form-control"
+							value="How can we help you?"
+							name="searchBar"
+							id="searchBar"
+							onfocus="if(this.value==this.defaultValue)this.value='';"
+							onblur="if(this.value=='')this.value=this.defaultValue;"
+				  	>
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="submit" id="searchButton"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </nav>
